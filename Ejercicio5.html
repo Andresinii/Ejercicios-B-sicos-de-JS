@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1>EJERCICIO 5</h1>
+    <script>
+        //BUBLE FOR
+        //5.1. Bucle for
+        //Imprimir los números del 20 al 30 en la consola.
+        //Imprimir los números pares del 30 al 50 en la consola.
+        //Calcular la suma de los primeros 50 números naturales.
+        //Imprimir la tabla de multiplicar del 8.
+        //Imprimir los elementos de un array.
+        //Imprimir un patrón de asteriscos en forma de triángulo, con altura 9.
+        //Calcular la suma de los números pares del 1 al 50.
+        //Imprimir los números del 30 al 20 en orden descendente.
+        //Calcular el promedio de un array de números.
+        for (let i = 20; i <= 30; i++) {
+            console.log(i);
+        }
+        for (let i = 30; i <= 50; i += 2) {
+            console.log(i);
+        }
+        let suma = 0;
+        for (let i = 1; i <= 50; i++) {
+            suma += i;
+        }
+        console.log("Suma de los primeros 50 números naturales: " + suma);
+        for (let i = 1; i <= 10; i++) {
+            console.log("8 x " + i + " = " + (8 * i));
+        }
+        let array = [5, 10, 15, 20, 25];
+        for (let i = 0; i < array.length; i++) {
+            console.log(array[i]);
+        }
+        let altura = 9;
+        for (let i = 1; i <= altura; i++) {           
+            console.log("*".repeat(i));
+        }
+        let sumaPares = 0;
+        for (let i = 1; i <= 50; i++) {
+            if (i % 2 === 0) {
+                sumaPares += i;
+            }
+        }
+        console.log("Suma de los números pares del 1 al 50: " + sumaPares);
+        for (let i = 30; i >= 20; i--) {
+            console.log(i);
+        }
+        let numeros = [10, 20, 30, 40, 50];
+        let sumaArray = 0;
+        for (let i = 0; i < numeros.length; i++) {
+            sumaArray += numeros[i];
+        }
+        let promedio = sumaArray / numeros.length;
+        console.log("Promedio del array: " + promedio);
+    </script>
+</body>
+</html>

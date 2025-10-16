@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h1>EJERCICIO 4</h1>
+    <script>
+        //ARRAYS
+        //4.1. Crea un programa que solicite al usuario ingresar una lista de números y luego encuentre el número más grande en esa lista.
+        //Solicita al usuario que ingrese la cantidad de números que quiere introducir.
+        //Solicita al usuario que introduzca cada número uno por uno.
+        //Almacena estos números en un array.
+        //Escribe una función llamada findLargestNumber que tome un array de números como entrada y devuelva el número más grande en el array.
+        //Dentro de la función, itera a través del array usando un bucle for para encontrar el número más grande.
+        //Muestra el número más grande encontrado al usuario.
+        //Asegúrate de que el programa utilice arrays para almacenar los números y la función para encontrar el número más grande.
+        let cantidadNumeros = parseInt(prompt("¿Cuántos números deseas ingresar?"));
+        let numeros = [];
+        for (let i = 0; i < cantidadNumeros; i++) {
+            let numero = parseFloat(prompt("Ingresa el número " + (i + 1) + ":"));
+            numeros.push(numero);
+        }
+    </script>
+</body>
+</html>
