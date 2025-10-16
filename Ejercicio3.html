@@ -15,16 +15,28 @@
         //Usa las fórmulas matemáticas apropiadas dentro de estas funciones para calcular el área (π * radio^2) y el perímetro (2 * π * radio) del círculo.
         //Llama a estas funciones con el radio proporcionado por el usuario como argumento.
         //Muestra los resultados del área y el perímetro al usuario.
-        let radio = prompt("Ingrese el radio del círculo:");
-        function calcularArea(r) {
-            return Math.PI * Math.pow(r, 2);
+        function calculateArea(radius) {
+            return Math.PI * Math.pow(radius, 2);
         }
+        function calculatePerimeter(radius) {
+            return 2 * Math.PI * radius;
+        }
+        let radius = parseFloat(prompt("Ingrese el radio del círculo:"));
+        let area = calculateArea(radius);
+        let perimeter = calculatePerimeter(radius);
+        alert("El área del círculo es: " + area.toFixed(2));
+        alert("El perímetro del círculo es: " + perimeter.toFixed(2));
     </script>
     <script>
         //3.2. Escribe una función llamada calculatePower que tome dos parámetros: base y exponent. Esta función debe calcular y devolver el resultado de elevar la base al exponente.
-        function calcularPerimetro(r) {
-            return 2 * Math.PI * r;
-        }        
+        function calculatePower(base, exponent) {
+            return Math.pow(base, exponent);
+        }
+        let base = parseFloat(prompt("Ingrese la base:"));
+        let exponent = parseFloat(prompt("Ingrese el exponente:"));
+        let result = calculatePower(base, exponent);
+        alert(base + " elevado a la potencia de " + exponent + " es: " + result);
+
     </script>
 </body>
 </html>
