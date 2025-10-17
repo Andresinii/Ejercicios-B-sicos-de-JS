@@ -23,6 +23,19 @@
             let numero = parseFloat(prompt("Ingresa el número " + (i + 1) + ":"));
             numeros.push(numero);
         }
+        
+        function findLargestNumber(arr) {
+            let largest = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > largest) {
+                    largest = arr[i];
+                }
+            }
+            return largest;
+        }
+        let numeroMasGrande = findLargestNumber(numeros);
+        alert("El número más grande ingresado es: " + numeroMasGrande);
+        
     </script>
 </body>
 </html>
